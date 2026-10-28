@@ -109,6 +109,13 @@ camera 60 FPS nhờ thay đổi cấu hình; muốn 60 FPS thực cần webcam h
    - Cài đặt đầy đủ các thư viện trong `requirements.txt`.
    - Tải về hai mô hình chính thức của Google: `pose_landmarker_lite.task` và `pose_landmarker_full.task`.
 
+Hai file setup luôn dùng `venv\Scripts\python.exe` nằm cạnh script, kể cả khi chạy
+từ thư mục khác. Thư viện chỉ được cài vào `venv\Lib\site-packages`; cache pip
+nằm trong `venv\.cache\pip` và file tạm nằm trong `venv\.tmp` trên ổ đĩa chứa
+dự án. Setup bỏ qua cấu hình pip có thể chuyển nơi cài đặt, chặn cài vào user/system
+Python và dừng ngay nếu môi trường ảo không hợp lệ hoặc cài đặt thất bại.
+Không cần kích hoạt venv hay chạy bằng quyền Administrator.
+
 ---
 
 ### Cách 2: Cài đặt thủ công bằng dòng lệnh
