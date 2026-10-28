@@ -1,0 +1,62 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 60,
+    "mirrored": true
+  },
+  "mediapipe": {
+    "model_type": "full",
+    "min_pose_detection_confidence": 0.5,
+    "min_pose_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "max_num_poses": 1
+  },
+  "control": {
+    "mode": "zones",
+    "sensitivity": 1.2,
+    "lane_center_half_width": 0.1,
+    "auto_calibrate_lanes": true,
+    "lane_shoulder_width_factor": 0.8,
+    "lean_threshold": 10.0,
+    "jump_threshold": 0.12,
+    "crouch_threshold": 0.14,
+    "hysteresis_factor": 0.55
+  },
+  "timing": {
+    "confirmation_time_ms": 70,
+    "horizontal_cooldown_ms": 120,
+    "jump_cooldown_ms": 400,
+    "crouch_cooldown_ms": 350,
+    "smoothing_ema_alpha": 0.4,
+    "key_press_duration_ms": 65
+  },
+  "keyboard": {
+    "key_left": "left",
+    "key_right": "right",
+    "key_jump": "up",
+    "key_crouch": "down",
+    "use_send_input": true
+  },
+  "game": {
+    "url": "https://poki.com/en/g/subway-surfers",
+    "window_patterns": [
+      "subway surfers",
+      "poki",
+      "google chrome",
+      "microsoft edge",
+      "mozilla firefox",
+      "brave",
+      "opera"
+    ],
+    "require_focus": true
+  },
+  "ui": {
+    "theme": "dark_ai_lab",
+    "show_skeleton": true,
+    "show_zones": true,
+    "show_metrics": true,
+    "test_mode": false
+  }
+}
